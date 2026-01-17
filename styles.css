@@ -1,0 +1,262 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    line-height: 1.6;
+    color: #333;
+}
+
+/* Header */
+header {
+    background: linear-gradient(135deg, #000 0%, #2d0052 100%);
+    color: white;
+    padding: 60px 20px;
+    text-align: center;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+header h1 {
+    font-size: 2.5em;
+    margin-bottom: 10px;
+    letter-spacing: 1px;
+}
+
+header p {
+    font-size: 1.1em;
+    opacity: 0.9;
+}
+
+/* Navigation */
+nav {
+    background-color: #1a001a;
+    padding: 15px 0;
+    position: sticky;
+    top: 0;
+    z-index: 100;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    padding: 10px 25px;
+    display: block;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+nav a:hover {
+    background-color: #7b2cbf;
+    color: white;
+}
+
+/* Main Container */
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 40px 20px;
+}
+
+/* Hero Section */
+.hero {
+    background: linear-gradient(135deg, #f0f0f0 0%, #e6d9f0 100%);
+    border-left: 5px solid #7b2cbf;
+    padding: 40px;
+    margin-bottom: 40px;
+    border-radius: 8px;
+}
+
+.hero h2 {
+    color: #2d0052;
+    margin-bottom: 15px;
+    font-size: 2em;
+}
+
+.hero p {
+    color: #555;
+    font-size: 1.1em;
+    margin-bottom: 20px;
+}
+
+/* Blog Posts Grid */
+.blog-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 30px;
+    margin-bottom: 40px;
+}
+
+.blog-post {
+    background: white;
+    border: 2px solid #f0f0f0;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.blog-post:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 5px 15px rgba(123, 44, 191, 0.2);
+    border-color: #7b2cbf;
+}
+
+.blog-header {
+    background: linear-gradient(135deg, #7b2cbf 0%, #2d0052 100%);
+    color: white;
+    padding: 20px;
+}
+
+.blog-header h3 {
+    font-size: 1.5em;
+    margin-bottom: 10px;
+}
+
+.blog-date {
+    font-size: 0.9em;
+    opacity: 0.8;
+}
+
+.blog-content {
+    padding: 20px;
+    color: #555;
+}
+
+.blog-content p {
+    margin-bottom: 15px;
+}
+
+.read-more {
+    display: inline-block;
+    background: linear-gradient(135deg, #7b2cbf 0%, #2d0052 100%);
+    color: white;
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: opacity 0.3s;
+    margin-top: 10px;
+}
+
+.read-more:hover {
+    opacity: 0.9;
+}
+
+/* Services Section */
+.services {
+    background: linear-gradient(135deg, #f9f9f9 0%, #ede7f6 100%);
+    padding: 40px;
+    border-radius: 8px;
+    margin-bottom: 40px;
+}
+
+.services h2 {
+    color: #2d0052;
+    margin-bottom: 30px;
+    font-size: 2em;
+}
+
+.service-list {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+}
+
+.service-item {
+    background: white;
+    padding: 20px;
+    border-left: 4px solid #7b2cbf;
+    border-radius: 5px;
+}
+
+.service-item h4 {
+    color: #7b2cbf;
+    margin-bottom: 10px;
+    font-size: 1.2em;
+}
+
+/* CTA Button */
+.cta-section {
+    text-align: center;
+    padding: 40px;
+    background: linear-gradient(135deg, #000 0%, #2d0052 100%);
+    color: white;
+    border-radius: 8px;
+    margin-bottom: 40px;
+}
+
+.cta-section h2 {
+    margin-bottom: 20px;
+    font-size: 2em;
+}
+
+.cta-button {
+    display: inline-block;
+    background-color: #7b2cbf;
+    color: white;
+    padding: 15px 40px;
+    text-decoration: none;
+    border-radius: 50px;
+    font-size: 1.1em;
+    transition: background-color 0.3s, transform 0.3s;
+    border: 2px solid #7b2cbf;
+}
+
+.cta-button:hover {
+    background-color: #5a1b8c;
+    border-color: #5a1b8c;
+    transform: scale(1.05);
+}
+
+/* Footer */
+footer {
+    background-color: #1a001a;
+    color: white;
+    text-align: center;
+    padding: 30px 20px;
+    margin-top: 40px;
+}
+
+footer p {
+    margin-bottom: 10px;
+}
+
+footer a {
+    color: #7b2cbf;
+    text-decoration: none;
+}
+
+footer a:hover {
+    text-decoration: underline;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    header h1 {
+        font-size: 2em;
+    }
+
+    nav ul {
+        flex-direction: column;
+    }
+
+    nav a {
+        padding: 15px 10px;
+    }
+
+    .hero h2 {
+        font-size: 1.5em;
+    }
+
+    .cta-section h2 {
+        font-size: 1.5em;
+    }
+}
